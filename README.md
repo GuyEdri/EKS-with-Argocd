@@ -1,18 +1,28 @@
-# WeatherApp ArgoCD Deployment Repository
+# Devops
 
-## Overview
-This repository contains all necessary Kubernetes manifest files for the deployment of the Hailyeah WeatherApp via ArgoCD. It is intended for testing purposes and should be used in a local [minikube](https://minikube.sigs.k8s.io/docs/start/) environment.
+![DevOps Workflow](images/devops_workflow.png)
 
-## Contents
-The repository includes the following Kubernetes manifests:
-- Kubernetes deployment manifest for the python-api application.
-- Service manifest to expose WeatherApp as a NodePort service.
-- ConfigMap containing the UI background settings for python-api.
-- ArgoCD user definition for a read-only user named "alice".
+## Project Overview
 
-All files are pre-configured for a deployment with ArgoCD in a minikube environment.
+This project automates the provisioning of infrastructure in AWS using Terraform and implements a CI/CD pipeline with Jenkins, GitLab, Helm, and ArgoCD. It sets up a scalable architecture with 2 nodes, an ArgoCD application for continuous deployment, a Jenkins pipeline for CI/CD, and integrates GitLab for source code management.
 
-## Comments
-Ensure that you have minikube installed and running on your machine. To access the python-api, expose the service using the command:
-minikube service python-api
+![Infrastructure Architecture](images/infrastructure_architecture.png)
 
+## Features
+
+- **Infrastructure as Code**: Provision AWS infrastructure with Terraform.
+- **Continuous Deployment**: Automate deployments using ArgoCD and Helm.
+- **CI/CD Pipeline**: Jenkins setup for automating build, test, and deployment processes.
+- **Source Code Management**: GitLab integration for version control.
+
+## Prerequisites
+
+Before you begin, ensure you have the following installed or configured:
+
+- AWS CLI
+- Terraform
+- Jenkins
+- GitLab
+- Helm
+- ArgoCD
+- Kubernetes cluster
