@@ -1,12 +1,12 @@
 # Devops
 
-![DevOps Workflow](images/devops_workflow.png)
+![DevOps Workflow]
 
 ## Project Overview
 
 This project automates the provisioning of infrastructure in AWS using Terraform and implements a CI/CD pipeline with Jenkins, GitLab, Helm, and ArgoCD. It sets up a scalable architecture with 2 nodes, an ArgoCD application for continuous deployment, a Jenkins pipeline for CI/CD, and integrates GitLab for source code management.
 
-![Infrastructure Architecture](images/infrastructure_architecture.png)
+![Infrastructure Architecture]
 
 ## Features
 
